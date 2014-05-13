@@ -1,0 +1,721 @@
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+    /*  top: 0;*/
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 2;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  border-bottom: 1px solid #3498DB;
+}
+.featurette {
+  padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-heading{
+    color: #3498DB;
+}
+
+
+.btn{
+    border-radius: 0px;
+}
+.carousel-control span[class*=icon-]
+{
+    background: #327bd1;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+}
+
+.carousel-control
+{
+    opacity: 0.7;
+}
+
+.navbar-primary
+{
+    background-color: #327bd1;
+    border-radius: 0px!important;
+}
+.navbar-primary li a
+{
+    text-align: center;
+}
+.navbar-primary li a i{
+    font-size: 30px;
+    margin-bottom: 4px;
+    width: 100%;
+    color: #c1d9ea;
+    display: inline-block;
+}
+.navbar-primary .nav > li > a:hover i, .navbar-primary .nav > li > a:focus i{
+    color: #FFF;
+}
+.navbar-primary .nav > li > a:hover, .navbar-primary .nav > li > a:focus
+{
+    background-color: #32a64c;
+    transition: 0.5s ease-in-out;
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar-primary a 
+{
+    color: #FFF;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+
+.carousel-indicators li{
+    border: 2px solid #6dbce0;
+}
+
+
+.navbar-toggle
+{
+    background-color: #d87b23;
+    color: #FFF;
+}
+
+.fa-6x{
+    font-size: 6em;
+}
+.fa-7x{
+    font-size: 7em;
+}
+.fa-8x{
+    font-size: 8em;
+}
+.fa-9x{
+    font-size: 9em;
+}
+
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+{
+    background-color: #629dd2;
+    color: #FFF;
+}
+
+.services-cont h2
+{
+    color: #32a64c;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+}
+
+.service-tab-in {
+  padding: 15px;
+  position: relative;
+}
+.service-tab-in .fa
+{
+    color: #327BD1;
+}
+
+.overlay-service {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.service-tab-in:hover .overlay-service 
+{
+    display: block;
+    transition: display 0.3s ease-in;
+}
+
+.service-tab-in:hover
+{
+    //transition: all 0.2s ease-in-out 0s;
+    animation: info-humbnail 0.3s forwards;
+    -webkit-animation: info-humbnail 0.3s forwards;
+}
+
+
+.thumbnail-eff
+{
+    animation: info-humbnail-load 0.5s forwards;
+    -webkit-animation: info-humbnail-load 0.5s forwards;
+}
+
+
+@keyframes info-humbnail{
+    0%{box-shadow:0 0 0 0 #3498db}50%{box-shadow:0 0 0 6px #3498db}100%{box-shadow:0 0 0 3px #3498db}
+}
+
+@-webkit-keyframes info-humbnail{
+    0%{box-shadow:0 0 0 3px #3498db}50%{box-shadow:0 0 0 6px #3498db}100%{box-shadow:0 0 0 3px #3498db}
+}
+
+@keyframes info-humbnail-load{
+    0%{box-shadow:0 0 0 0 #3498db}50%{box-shadow:0 0 0 8px #3498db}100%{box-shadow:0 0 0 0px #3498db}
+}
+
+@-webkit-keyframes info-humbnail-load{
+    0%{box-shadow:0 0 0 3px #3498db}50%{box-shadow:0 0 0 8px #3498db}100%{box-shadow:0 0 0 0px #3498db}
+}
+
+.brand-logo
+{
+    color: #FFF;
+    font-size: 60px;
+    margin-top: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.brand-logo .out-slash
+{
+    color: #32a64c;
+    font-size: 70px;
+    font-family: 'Alegreya', serif;
+}
+.brand-logo .out-slash .slash
+{
+    color: #f09335;
+    
+}
+
+
+.top-header.top-bar {
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 10;
+}
+
+.social-icons {
+  list-style: none outside none;
+  margin-bottom: 0;
+  padding: 10px 0;
+  float: left;
+}
+.social-icons li {
+  float: left;
+}
+.top-header .social-icons a {
+  background: #000;
+}
+.social-icons a {
+  border-radius: 50% 50% 50% 50%;
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  height: 32px;
+  margin-right: 10px;
+  padding-top: 4px;
+  text-align: center;
+  width: 32px;
+}
+.top-header .social-icons a:hover
+{
+    background-color: #4ea3e6;
+}
+.top-header .social-icons a .fa {
+  color: #FFF;
+}
+
+.social-icons a .fa:before {
+  font-size: 18px;
+  padding: 0;
+  text-align: center;
+}
+
+.top-header .social-icons a .fa:before {
+  font-size: 18px;
+  padding: 0;
+  text-align: center;
+}
+
+.top-header.top-bar .search-form {
+  padding: 10px 0;
+}
+.top-header .search-form {
+  border: 0 none;
+  box-shadow: none;
+}
+.top-header.top-bar .search-form .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.top-header.top-bar .search-form .form-group input{
+    border-radius: 0px;
+    border: none;
+}
+
+.icon-sl-link
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    text-shadow: 0 0 2px #000000;
+    color: #FFF;
+}
+
+.icon-sl-link .fa
+{
+    color: #fff;
+}
+
+.out-slider
+{
+    position: relative;
+}
+.slider-bg-es
+{
+    background: url(../images/pixel.png) repeat ;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  
+}
+
+.da-slide h2, .da-slide p
+{
+    background: rgba(0,0,0,0.4);
+    border-left: 4px solid #32a64c;
+    padding: 10px;
+}
+.featurette-fa
+{
+    font-size: 20em;
+}
+.featurette-i-co
+{
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Dosis', sans-serif;
+    padding: 5px;
+}
+
+.primary-headline{
+    border-bottom: 2px solid #3498DB;
+    display: inline-block;
+}
+
+
+footer hr {
+  border-bottom: 1px solid #3498DB;
+  border-top: 0 none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer
+{
+    background: #262525;
+    border-top: 3px solid #0C629C;
+    color: #FFF;
+    padding: 10px 0px 30px;
+}
+
+footer ul{
+    margin: 10px 0px;
+    padding: 0;
+    
+}
+
+footer ul li{
+    list-style: none;
+    float: left;
+    
+}
+
+footer ul li a{
+    color: #EEBE24;
+    font-weight: 600;
+}
+
+.contact-footer .fa
+{
+    margin-right: 10px;
+}
+
+.subs-email-cont .subs_email
+{
+    position: relative;
+    border: 3px solid #3498DB;
+}
+
+.subs-email-cont .post-inp-req
+{
+    border-radius: 0px;
+    padding: 6px;
+    width: 70%;
+    color: #000;
+    border: none;
+}
+
+.subs-email-cont .subs_email
+{
+    margin-top: 10px;
+}
+.subs-email-cont .post-subs
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30%; 
+    min-width: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*
+404 error
+*/
+
+.http-error {
+  font-size: 26px;
+}
+
+.http-error .http-error-number {
+  font-family: "Dosis",sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+}
+.color-lead {
+  color: #3498DB;
+}
+
+.http-error .icn-img-s {
+  font-size: 150px;
+}
+.background-clouds
+{
+    height: 196px;
+}
+
+.background-clouds h3
+{
+    margin: 3px 0px 10px;
+}
+
+.section-first-l
+{
+    margin-top: 120px;
+}
+
+
+/*
+slice animation
+*/
+
+.slice {
+  background-color: #FFFFFF;
+}
+
+.slice {
+  padding: 66px 0;
+}
+
+.mediaHover {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.mask {
+  background-color: #EEBE24;
+}
+
+.mask {
+  left: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.iconLinks {
+  position: relative;
+}
+.iconLinks a {
+  display: inline-block;
+  text-decoration: none;
+}
+.iconRounded:before {
+  margin: auto;
+  text-align: center;
+}
+
+.iconLinks a span {
+  color: #FFFFFF;
+}
+
+.iconLinks a span {
+  display: block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  text-align: center;
+  top: -30px;
+  width: 100%;
+}
+
+.imgWrapper
+{
+    height: 286px;
+    overflow: hidden;
+}
+.imgWrapper .img-responsive
+{
+    max-width: 100%;
+}
+
+.color4, .slice.color4, .bulle.color4, .ctaBox.color4 {
+  background-color: #EEBE24;
+  color: #FFFFFF;
+}
+
+.color4 h1, .color4 h2, .color4 h3, .color4 h4, .color4 blockquote, .color4 a {
+  color: #FFFFFF;
+}
+.newsText p {
+  font-size: 12px;
+}
+.newsText {
+  margin-bottom: 0;
+}
+
+.newsText {
+  padding: 20px 20px 25px;
+}
+.newsText h3 {
+  margin-bottom: 8px;
+}
+
+#news article .mask
+{
+    margin-top: 286px;
+}
+
+
+#news article:hover .mask
+{
+    margin-top: 0px;
+    transition: margin-top 0.3s ease;
+}
+.iconRounded:before {
+  margin: auto;
+  text-align: center;
+}
+.iconBig.iconRounded {
+  border-width: 4px;
+}
+.iconRounded {
+  background-color: #FFFFFF;
+  color: #EEBE24;
+}
+.iconRounded {
+  border-radius: 50% 50% 50% 50%;
+  display: block;
+  text-align: center;
+}
+.iconBig.iconRounded, .isotopeItem .iconBig.iconRounded {
+  height: 125px;
+  padding-top: 28px;
+  width: 125px;
+}
+.iconLinks
+{
+    display: none;
+}
+.iconBig, .isotopeItem .iconBig {
+  font-size: 66px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Remve the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+  .navbar
+  {
+      min-height: 85px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  
+}
+@media (min-width: 360px) and (max-width: 760px) {
+
+  .top-header.top-bar
+  {
+      padding-bottom: 10px;
+  }
+  .brand-logo
+  {
+      font-size: 36px;
+      margin-top: 0px;
+  }
+  .brand-logo .out-slash
+  {
+      font-size: 50px;
+  }
+  .navbar-primary
+  {
+      margin-top: 25px;
+  }
+  .da-slide h2
+  {
+      width: auto!important;
+  }
+  .da-slide p{
+      width: auto!important;
+      margin-right: 12px!important;
+      font-size: 13px!important;
+  }
+  
+}
+
+@media (max-width: 360px) {
+
+  .top-header.top-bar
+  {
+      padding-bottom: 10px;
+  }
+  .brand-logo
+  {
+      font-size: 36px;
+      margin-top: 0px;
+  }
+  .brand-logo .out-slash
+  {
+      font-size: 50px;
+  }
+  .navbar-primary
+  {
+      margin-top: 25px;
+  }
+
+}

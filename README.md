@@ -1,4 +1,4 @@
-html5_theme
-===========
+html5
+=====
 
 test
