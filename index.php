@@ -92,7 +92,7 @@ include 'header.php';
         </div>
         <hr class="featurette-divider">
         <?php
-        include 'carousel.php';
+        //include 'carousel.php';
         ?>
     </div><!-- /.container -->
         <?php

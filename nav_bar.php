@@ -18,6 +18,7 @@
                                 <li><a href="aboutus.php"><i class="fa fa-user"></i> About</a></li>
                                 <li><a href="contactus.php"><i class="fa fa-phone"></i> Contact</a></li>
                                 <li><a href="error404.php"><i class="fa fa-frown-o"></i> 404</a></li>
+                                <li><a href="portfolio.php"><i class="fa fa-picture-o"></i> Portfolio</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->

@@ -8,10 +8,14 @@
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/animate.css" rel="stylesheet">
+        <link href="assets/css/rtbox.css" rel="stylesheet" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href="assets/css/custom-icons.css" rel="stylesheet">
         <link href="assets/css/custom-icons-ie7.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/plugins/ParallaxContentSlider/css/style.css" />
+        <script>
+            HTTP_PATH = "http://common.localhost.com/site/";
+        </script>
         <script type="text/javascript" src="assets/plugins/ParallaxContentSlider/js/modernizr.custom.28468.js"></script>
         <noscript>
         <link rel="stylesheet" type="text/css" href="assets/plugins/ParallaxContentSlider/css/nojs.css" />

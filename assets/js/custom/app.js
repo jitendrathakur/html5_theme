@@ -61,6 +61,13 @@ $(function() {
         });
     }
     
+    $(".rt-box-load").rtbox({
+        loader: HTTP_PATH + "assets/images/icons/sky-load.gif",
+        close_icon: HTTP_PATH + "assets/images/icons/close.png"
+    });
+    
+    
+    $(".img-responsive").rtloady({delay:1000});
     /*
     |--------------------------------------------------------------------------
     | MAIN ROLLOVER EFFECTS

@@ -53,6 +53,8 @@
     <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/ParallaxContentSlider/js/jquery.cslider.js"></script>
     <script type="text/javascript" src="assets/js/jquery.digitaltext.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.rtloady.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.rtbox.js"></script>
     <script type="text/javascript" src="assets/js/custom/app.js"></script>
     </body>
 </html>

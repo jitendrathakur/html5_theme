@@ -1,0 +1,35 @@
+#rtbox_modal .inner_d_panel
+{
+    height: 300px;
+    position: relative;
+}
+
+#rtbox_modal .loading
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.close_out
+{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.close_out_img
+{
+    width: 30px;
+}
+
+#rtbox_modal img.loading-cl
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #FFF;
+    top: 45%;
+    left: 45%;
+}

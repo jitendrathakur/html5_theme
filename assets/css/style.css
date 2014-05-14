@@ -10,7 +10,10 @@ body {
   color: #5a5a5a;
 }
 
-
+a:focus
+{
+    outline: none;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -564,6 +567,7 @@ slice animation
 {
     height: 286px;
     overflow: hidden;
+    position: relative;
 }
 .imgWrapper .img-responsive
 {
@@ -630,6 +634,16 @@ slice animation
 }
 .iconBig, .isotopeItem .iconBig {
   font-size: 66px;
+}
+
+.imgWrapper img.loading-cl
+{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: #FFF;
+    top: 40%;
+    left: 40%;
 }
 
 
